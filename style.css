@@ -1,0 +1,48 @@
+:root {
+    --transform-style: preserve-3d;
+  }
+  
+  * {
+    transform-style: var(--transform-style);
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    perspective: 500px;
+  }
+  
+  .panel {
+    width: 200px;
+    height: 200px;
+    border: 12px solid #26f;
+    box-sizing: border-box;
+    font-size: 52.5px;
+    line-height: 1.117;
+    transform: rotateY(50deg);
+  }
+  
+  .text {
+    transform: rotateY(-50deg);
+  }
+  
+  .ui {
+    position: relative;
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  
+  .input {
+    width: 100px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  
